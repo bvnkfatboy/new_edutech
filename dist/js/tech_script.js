@@ -1,4 +1,4 @@
-$('.owl-carousel').owlCarousel({
+$('.tech-body .owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,

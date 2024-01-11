@@ -1,6 +1,7 @@
 body {
     background: white;
     min-height: 100vh;
+    font-family: kanit;
 }
 
 .social-link {
@@ -26,6 +27,7 @@ body {
 .rounded-custom{
     border-radius: 15px !important;
     background: rgb(57, 110, 255) !important;
+    
 }
 
 .img-border{

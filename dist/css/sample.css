@@ -26,11 +26,14 @@ body {
 
 .rounded-custom{
     border-radius: 15px !important;
-    background: rgb(57, 110, 255) !important;
+    /* background: rgba(0, 102, 255, 1) !important; */
+    box-shadow: 0 10px 15px rgba(0,0,0,0.16), 0 10px 15px rgba(0,0,0,0.23) !important;
     
 }
 
 .img-border{
     border-radius: 10px !important;
     margin-bottom: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.16), 4px 4px 10px rgba(0,0,0,0.23) !important;
 }
+    

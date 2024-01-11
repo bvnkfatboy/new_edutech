@@ -1,7 +1,5 @@
 body {
-    background: #e8cbc0;
-    background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
-    background: linear-gradient(to right, #e8cbc0, #636fa4);
+    background: white;
     min-height: 100vh;
 }
 
@@ -22,4 +20,15 @@ body {
     background: #ddd;
     text-decoration: none;
     color: #555;
+}
+
+
+.rounded-custom{
+    border-radius: 15px !important;
+    background: rgb(57, 110, 255) !important;
+}
+
+.img-border{
+    border-radius: 10px !important;
+    margin-bottom: 10px;
 }

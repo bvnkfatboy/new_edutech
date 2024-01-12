@@ -204,3 +204,9 @@ margin-top: 10px;
 .tech-body .tech-slide-blog, .tech-body  .tech-slide-video{
     margin-top: 20px;
 }
+
+.d-block{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}

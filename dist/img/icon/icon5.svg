@@ -1,0 +1,23 @@
+<svg viewBox="0 0 39 58" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:anim="http://www.w3.org/2000/anim" anim="" anim:transform-origin="50% 50%" anim:duration="1" anim:ease="ease-in-out">
+    <g id="Group 25">
+        <g id="Line Rounded/Graph Ascend" clip-path="url(#clip0_280_1287)">
+            <g id="Graph Ascend">
+                <path id="Vector" d="M37.5425 18.5694V8.94444H27.9175" stroke="#0066FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path id="Vector_2" d="M37.5418 8.94444L26.2214 20.2649C26.0228 20.4636 25.7869 20.6213 25.5273 20.7289C25.2677 20.8364 24.9895 20.8918 24.7085 20.8918C24.4275 20.8918 24.1493 20.8364 23.8897 20.7289C23.6301 20.6213 23.3942 20.4636 23.1956 20.2649L18.7353 15.8046C18.5367 15.6058 18.3008 15.4481 18.0412 15.3406C17.7816 15.233 17.5034 15.1776 17.2224 15.1776C16.9414 15.1776 16.6631 15.233 16.4036 15.3406C16.144 15.4481 15.9081 15.6058 15.7095 15.8046L5.4585 26.0556" stroke="#0066FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+        <g id="Line Rounded/Graph">
+            <g id="Graph">
+                <path id="Vector_3" d="M2.30273 55H33.6981" stroke="#0066FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path id="Vector_4" d="M8.69105 39.6512H4.50501C4.22746 39.6512 3.96127 39.7614 3.76501 39.9577C3.56875 40.154 3.4585 40.4201 3.4585 40.6977V55H9.73757V40.6977C9.73757 40.4201 9.62731 40.154 9.43105 39.9577C9.23479 39.7614 8.96861 39.6512 8.69105 39.6512Z" stroke="#0066FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path id="Vector_5" d="M20.0934 25H15.9074C15.6298 25 15.3636 25.1103 15.1674 25.3065C14.9711 25.5028 14.8608 25.769 14.8608 26.0465V55H21.1399V26.0465C21.1399 25.769 21.0297 25.5028 20.8334 25.3065C20.6371 25.1103 20.371 25 20.0934 25Z" stroke="#0066FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path id="Vector_6" d="M31.4957 31.2791H27.3097C27.0321 31.2791 26.766 31.3893 26.5697 31.5856C26.3734 31.7818 26.2632 32.048 26.2632 32.3256V55H32.5423V32.3256C32.5423 32.048 32.432 31.7818 32.2357 31.5856C32.0395 31.3893 31.7733 31.2791 31.4957 31.2791Z" stroke="#0066FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <clipPath id="clip0_280_1287">
+            <rect width="35" height="35" fill="white" transform="translate(4)"></rect>
+        </clipPath>
+    </defs>
+</svg>

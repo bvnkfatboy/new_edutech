@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
+a{
+    text-decoration: none !important;
+}
 
 .tech-top-main-icon .svg-cursor:before {
     content: "";
@@ -44,6 +47,8 @@ font-style: normal;
 font-weight: 500;
 line-height: 125%; /* 20px */
 }
+
+
 .tech-body .tech-top-main-icon{
     width: 950px;
 }
@@ -211,8 +216,8 @@ margin-top: 10px;
     object-fit: cover;
 }
 
-.oar-logo:hover{
-    
 
-
+.tech-card a:hover > .tech-top-main-icon-title {
+    color: #06F  !important;
+    font-size: 16px;
 }

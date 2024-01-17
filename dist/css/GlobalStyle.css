@@ -21,7 +21,8 @@ a{
 }
 
 .tech-body  .tech-top-title,
-.tech-body .tech-slide-image{
+.tech-body .tech-slide-image,
+.tech-body .tech-slide-img{
     width: 100%;
 }
 .tech-text-header{
@@ -63,7 +64,8 @@ line-height: 125%; /* 20px */
 
     .tech-body .tech-slide-image .owl-carousel .item .item-text,
     .tech-body .tech-slide-blog .owl-carousel .item .item-text,
-    .tech-body .tech-slide-video .owl-carousel .item .item-text {
+    .tech-body .tech-slide-video .owl-carousel .item .item-text,
+    .tech-body .tech-slide-img .owl-carousel .item .item-text {
         font-size: 14px !important;
     }
 }
@@ -71,7 +73,8 @@ line-height: 125%; /* 20px */
 
 .tech-body .tech-slide-image .carousel-wrap,
 .tech-body .tech-slide-blog .carousel-wrap,
-.tech-body .tech-slide-video .carousel-wrap {
+.tech-body .tech-slide-video .carousel-wrap,
+.tech-body .tech-slide-img .carousel-wrap {
     margin-top: 20px;
     padding: 0 5%;
     position: relative;

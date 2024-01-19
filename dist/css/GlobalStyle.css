@@ -249,6 +249,12 @@ margin-top: 10px;
 
 }
 
+.tech-video .tech-video-title-right{
+    display: flex;
+    margin-top: 50px; 
+
+}
+
 .tech-video .tech-video-title .tech-text-header-1 ul{
     font-family: kanit;
     font-size: 20px !important;
@@ -262,4 +268,9 @@ margin-top: 10px;
 
 #title-video{
     margin-left: 40px;
+}
+
+.tech-slide-video .tech-top-title{
+    margin-left: 50px;
+
 }

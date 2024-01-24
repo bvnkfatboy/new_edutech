@@ -219,6 +219,30 @@ margin-top: 10px;
     object-fit: cover;
 }
 
+#oar-slide .carousel-control-next{
+    border-radius: 50%;  /* ทำให้มีรูปร่างเป็นวงกลม */
+    width: 40px;  /* ปรับขนาดของไอคอนตามที่ต้องการ */
+    height: 40px;
+    background-color: #06F;  /* สีของวงกลม, ควรแทนที่ #your_color ด้วยสีที่คุณต้องการ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    margin-right: 50px;
+    
+}
+#oar-slide .carousel-control-prev{
+    border-radius: 50%;  /* ทำให้มีรูปร่างเป็นวงกลม */
+    width: 40px;  /* ปรับขนาดของไอคอนตามที่ต้องการ */
+    height: 40px;
+    background-color: #06F;  /* สีของวงกลม, ควรแทนที่ #your_color ด้วยสีที่คุณต้องการ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    margin-left: 50px;
+    
+}
 
 .tech-card a:hover > .tech-top-main-icon-title {
     color: #06F  !important;

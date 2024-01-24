@@ -1,0 +1,10 @@
+<svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:anim="http://www.w3.org/2000/anim" anim="" anim:transform-origin="50% 50%" anim:duration="1" anim:ease="ease-in-out">
+    <g id="Secondary Cricle Button">
+        <g id="Secondary Cricle Button_2">
+            <circle id="Ellipse 432" cx="25.5778" cy="25.5778" r="25.5778" fill="#0066FF"></circle>
+            <g id="Line Rounded/Chevron Right">
+                <path id="Chevron Right" d="M20.75 36.5L31.25 26L20.75 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,3 +1,5 @@
+
+// เปลี่ยน localhost เป็น 10.253.54.57
 function fetchAndCreateCarousel() {
     // ดึงข้อมูลจาก API
     fetch('http://localhost/edu_tech_backend/component/API/getAPI.php?database=carousal_img')

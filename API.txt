@@ -1,0 +1,13 @@
+เส้น API 
+
+ฐาน carousal_img
+http://10.253.54.57/edu_tech_backend/component/API/getAPI.php?database=carousal_img
+
+ฐาน Gallery
+http://10.253.54.57/edu_tech_backend/component/API/getAPI.php?database=gallery
+
+ฐาน Article
+http://10.253.54.57/edu_tech_backend/component/API/getAPI.php?database=article
+
+ฐาน Video
+http://10.253.54.57/edu_tech_backend/component/API/getAPI.php?database=video

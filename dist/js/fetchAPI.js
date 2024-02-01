@@ -38,7 +38,7 @@ function fetchAndCreateCarousel() {
 fetchAndCreateCarousel();
 
 function fetchGallaryAPI() {
-    fetch('http://localhost/edu_tech_backend/component/API/getAPI.php?database=gallery')
+    fetch('http://10.253.54.68/edu_tech_backend/component/API/getAPI.php?database=gallery')
     .then(response => response.json())
     .then(data => {
         // Iterate through the data and create HTML elements

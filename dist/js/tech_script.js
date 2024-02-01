@@ -1,4 +1,4 @@
-$('.tech-slide-image .owl-carousel , .tech-slide-blog .owl-carousel , .tech-slide-video .owl-carousel').owlCarousel({
+$('.tech-slide-blog .owl-carousel , .tech-slide-video .owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,

@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-
+.owl-prev.disabled,
+.owl-next.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+}
 .owl-carousel .item img {
     width: 242px;
     height: 242px;

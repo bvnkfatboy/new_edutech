@@ -131,8 +131,8 @@
                 </div>
             </div>
             <div class="carousel-wrap">
-                <div class="owl-carousel" id="owlslide2">
-                    <div class="item">
+                <div class="owl-carousel" id="article-carousel-1">
+                    <!-- <div class="item">
                         <a href="#">
                             <img src="http://placehold.it/150x150">
                             <p class="item-text">โลโก้สำนักวิทยบริการ มหาวิทยาลัยอุบลราชธานี (UBU OAR LOGO)</p>
@@ -173,7 +173,7 @@
                             <img src="http://placehold.it/150x150">
                             <p class="item-text">โลโก้สำนักวิทยบริการ มหาวิทยาลัยอุบลราชธานี (UBU OAR LOGO)</p>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -184,8 +184,8 @@
                 <p class="tech-text-header">VIDEO</p>
             </div>
             <div class="carousel-wrap">
-                <div class="owl-carousel" id="owlslide1">
-                    <div class="item">
+                <div class="owl-carousel" id="video-carousel-1">
+                    <!-- <div class="item">
                         <img src="http://placehold.it/150x150">
 
                     </div>
@@ -212,7 +212,7 @@
                     <div class="item">
                         <img src="http://placehold.it/150x150">
 
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -261,63 +261,73 @@
                     });
                 })
                 .catch(error => console.error('Error:', error));
-            fetch('http://localhost/edu_tech_backend/component/API/getAPI.php?database=gallery')
-                .then(response => response.json())
-                .then(data => {
-                    // Iterate through the data and create HTML elements
-                    const owlSlide = document.getElementById('image-carousel-1');
 
-                    data.forEach(item => {
-                        const carouselItem = document.createElement('div');
-                        carouselItem.className = 'item';
+            function fetchDataAndCreateCarousel(database, carouselId, linkProperty, titleProperty,
+                imgResourceProperty) {
+                const apiUrl =
+                `http://localhost/edu_tech_backend/component/API/getAPI.php?database=${database}`;
 
-                        const link = document.createElement('a');
-                        link.href = item.img_link;
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        const owlSlide = document.getElementById(carouselId);
 
-                        const img = document.createElement('img');
-                        img.src = item.img_resource;
-                        img.alt = item.img_title;
+                        data.forEach(item => {
+                            const carouselItem = document.createElement('div');
+                            carouselItem.className = 'item';
 
-                        const text = document.createElement('p');
-                        text.className = 'item-text';
-                        text.textContent = item.img_title;
+                            const link = document.createElement('a');
+                            link.href = item[linkProperty];
 
-                        link.appendChild(img);
-                        link.appendChild(text);
-                        carouselItem.appendChild(link);
-                        owlSlide.appendChild(carouselItem);
-                    });
+                            const img = document.createElement('img');
+                            img.src = item[imgResourceProperty];
+                            img.alt = item[titleProperty];
 
-                    // Initialize Owl Carousel
-                    $('.tech-slide-image #image-carousel-1').owlCarousel({
-                        loop: true,
-                        margin: 10,
-                        nav: true,
-                        navText: [
-                            "<i class='fas fa-chevron-circle-left'></i>",
-                            "<i class='fas fa-chevron-circle-right'></i>"
-                        ],
-                        autoplay: true,
-                        autoplayHoverPause: true,
-                        responsiveClass: true,
+                            const text = document.createElement('p');
+                            text.className = 'item-text';
+                            text.textContent = item[titleProperty];
 
-                        responsive: {
-                            0: {
-                                items: 1
-                            },
-                            500: {
-                                items: 2
-                            },
-                            600: {
-                                items: 3
-                            },
-                            1000: {
-                                items: 4
+                            link.appendChild(img);
+                            link.appendChild(text);
+                            carouselItem.appendChild(link);
+                            owlSlide.appendChild(carouselItem);
+                        });
+
+                        // Initialize Owl Carousel
+                        $(`#${carouselId}`).owlCarousel({
+                            loop: true,
+                            margin: 10,
+                            nav: true,
+                            navText: [
+                                "<i class='fas fa-chevron-circle-left'></i>",
+                                "<i class='fas fa-chevron-circle-right'></i>"
+                            ],
+                            autoplay: true,
+                            autoplayHoverPause: true,
+                            responsiveClass: true,
+                            responsive: {
+                                0: {
+                                    items: 1
+                                },
+                                500: {
+                                    items: 2
+                                },
+                                600: {
+                                    items: 3
+                                },
+                                1000: {
+                                    items: 4
+                                }
                             }
-                        }
-                    });
-                })
-                .catch(error => console.error('Error fetching data:', error));
+                        });
+                    })
+                    .catch(error => console.error(`Error fetching ${database} data:`, error));
+            }
+
+            // Call the function for each database
+            fetchDataAndCreateCarousel('gallery', 'image-carousel-1', 'img_link', 'img_title', 'img_resource');
+            fetchDataAndCreateCarousel('article', 'article-carousel-1', 'article_link', 'article_title','img_resource');
+            fetchDataAndCreateCarousel('video', 'video-carousel-1', 'video_link', '','img_resource');
         });
     </script>
 

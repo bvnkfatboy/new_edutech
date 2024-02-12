@@ -185,34 +185,6 @@
             </div>
             <div class="carousel-wrap">
                 <div class="owl-carousel" id="video-carousel-1">
-                    <!-- <div class="item">
-                        <img src="http://placehold.it/150x150">
-
-                    </div>
-                    <div class="item">
-                        <img src="http://placehold.it/150x150">
-
-                    </div>
-                    <div class="item">
-                        <img src="http://placehold.it/150x150">
-
-                    </div>
-                    <div class="item">
-                        <img src="http://placehold.it/150x150">
-
-                    </div>
-                    <div class="item">
-                        <img src="http://placehold.it/150x150">
-
-                    </div>
-                    <div class="item">
-                        <img src="http://placehold.it/150x150">
-
-                    </div>
-                    <div class="item">
-                        <img src="http://placehold.it/150x150">
-
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -229,7 +201,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            fetch('http://localhost/edu_tech_backend/component/API/getAPI.php?database=carousal_img')
+            fetch('http://10.253.54.127/edu_tech_backend/component/API/getAPI.php?database=carousal_img')
                 .then(response => response.json())
                 .then(data => {
                     // สร้าง indicators
@@ -265,7 +237,7 @@
             function fetchDataAndCreateCarousel(database, carouselId, linkProperty, titleProperty,
                 imgResourceProperty) {
                 const apiUrl =
-                `http://localhost/edu_tech_backend/component/API/getAPI.php?database=${database}`;
+                `http://10.253.54.127/edu_tech_backend/component/API/getAPI.php?database=${database}`;
 
                 fetch(apiUrl)
                     .then(response => response.json())

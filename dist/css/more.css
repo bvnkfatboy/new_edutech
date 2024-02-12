@@ -1,0 +1,7 @@
+.card-custom .card {
+    border-radius: 10px;
+}
+
+.card-custom .card .card-img-top {
+    border-radius: 10px 10px 0 0;
+}

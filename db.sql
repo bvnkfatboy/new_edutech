@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `carousel_img_slide` (
 
 -- Dumping data for table edu_tech_db.carousel_img_slide: ~1 rows (approximately)
 REPLACE INTO `carousel_img_slide` (`img_id`, `img_resource`, `img_source`, `img_regdate`, `img_update`, `img_location`) VALUES
-	(12, 'http://localhost/edu_tech_backend/dist/img/carousal/20240131072033.png', 'คอมพิวเตอร์', '2024-01-31 06:20:33', '2024-01-31 06:20:33', 'dist/img/carousal/20240131072033.png');
+	(12, 'http://10.253.54.127/edu_tech_backend/dist/img/carousal/20240131072033.png', 'คอมพิวเตอร์', '2024-01-31 06:20:33', '2024-01-31 06:20:33', 'dist/img/carousal/20240131072033.png');
 
 -- Dumping structure for table edu_tech_db.gallery
 CREATE TABLE IF NOT EXISTS `gallery` (

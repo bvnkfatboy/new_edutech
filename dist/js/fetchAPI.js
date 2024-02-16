@@ -1,5 +1,5 @@
 
-// เปลี่ยน 10.253.54.127 เป็น 10.253.54.57
+// เปลี่ยน localhost เป็น 10.253.54.57
 function fetchAndCreateCarousel() {
     // ดึงข้อมูลจาก API
 

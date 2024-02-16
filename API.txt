@@ -4,7 +4,7 @@
 http://10.253.54.57/edu_tech_backend/component/API/getAPI.php?database=carousal_img
 
 ฐาน Gallery
-http://10.253.54.127/edu_tech_backend/component/API/getAPI.php?database=gallery
+http://localhost/edu_tech_backend/component/API/getAPI.php?database=gallery
 
 ฐาน Article
 http://10.253.54.57/edu_tech_backend/component/API/getAPI.php?database=article

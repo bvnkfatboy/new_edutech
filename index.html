@@ -201,7 +201,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            fetch('http://10.253.54.127/edu_tech_backend/component/API/getAPI.php?database=carousal_img')
+            fetch('http://localhost/edu_tech_backend/component/API/getAPI.php?database=carousal_img')
                 .then(response => response.json())
                 .then(data => {
                     // สร้าง indicators
@@ -237,7 +237,7 @@
             function fetchDataAndCreateCarousel(database, carouselId, linkProperty, titleProperty,
                 imgResourceProperty) {
                 const apiUrl =
-                `http://10.253.54.127/edu_tech_backend/component/API/getAPI.php?database=${database}`;
+                `http://localhost/edu_tech_backend/component/API/getAPI.php?database=${database}`;
 
                 fetch(apiUrl)
                     .then(response => response.json())

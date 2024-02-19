@@ -50,12 +50,13 @@ a{
 
 .tech-body .tech-top-main-icon-title{
     color: #000;
-text-align: center;
-font-family: Kanit;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 125%; /* 20px */
+    text-align: center;
+    font-family: Kanit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 20px */
+    margin-bottom: 10px;
 }
 
 
@@ -307,4 +308,9 @@ margin-top: 10px;
 .tech-slide-video .tech-top-title{
     margin-left: 50px;
 
+}
+
+.title-icon p{
+    font-family: kanit;
+    font-size: 14px !important;
 }

@@ -66,7 +66,7 @@
                 <p class="tech-text-header">บริการฝ่ายเทคโนโลยีทางการศึกษา</p>
             </div>
 
-            <div class="tech-top-main-icon d-block mx-auto">
+            <!-- <div class="tech-top-main-icon d-block mx-auto">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-6 col-sm-3 mb-3 tech-card">
@@ -104,13 +104,48 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+        </div>
+
+        <div class="row justify-content-md-center text-center title-icon ">
+            <div class="col-md-6">
+                <a href="media_learning.html" class="d-flex flex-column align-items-center">
+                    <object data="dist/img/icon/icon2.svg" type="image/svg+xml" width="99px" height="99px"
+                        style="z-index:-100;"></object>
+                    <div class="tech-top-main-icon-title">พัฒนาสื่อและนวัตกรรม
+                        <br>การเรียนรู้
+                    </div>
+                </a>
+                <p>Standing on the frontline when the bombs start to fall. Heaven is jealous of our love, angels are
+                    crying from up above. Can't replace you with a million rings. Boy, when you're with me I'll give you
+                    a taste. There’s no going back. Before you met me I was alright but things were kinda heavy. Heavy
+                    is the head that wears the crown.</p>
+                <p>
+                    <a class="btn btn-primary" href="media_learning.html" role="button">ข้อมูลเพิ่มเติม »</a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <a href="sevice_tech.html" class="d-flex flex-column align-items-center">
+                    <object data="dist/img/icon/icon3.svg" type="image/svg+xml" width="99px" height="99px"
+                        style="z-index:-100;"></object>
+                    <div class="tech-top-main-icon-title">บริการโสตทัศนูปกรณ์
+                        <br>และทรัพยากรการเรียนรู้
+                    </div>
+                </a>
+                <p>Standing on the frontline when the bombs start to fall. Heaven is jealous of our love, angels are
+                    crying from up above. Can't replace you with a million rings. Boy, when you're with me I'll give you
+                    a taste. There’s no going back. Before you met me I was alright but things were kinda heavy. Heavy
+                    is the head that wears the crown.</p>
+                <p>
+                    <a class="btn btn-primary" href="sevice_tech.html" role="button">ข้อมูลเพิ่มเติม »</a>
+                </p>
             </div>
         </div>
         <hr>
         <div class="tech-slide-image mt-5">
             <div class="tech-top-title d-flex">
-                <object data="dist/img/fi-sr-picture.svg" width="24px" height="24px"></object>
-                <p class="tech-text-header">คลังภาพ</p>
+                <object data="dist/img/news.svg" width="24px" height="24px"></object>
+                <p class="tech-text-header">กิจกรรม</p>
                 <div class="info-more">
                     <a href="more_img.html" class="btn btn-primary btn-custom-more">ดูเพิ่มเติม</a>
                 </div>
@@ -188,6 +223,33 @@
                 </div>
             </div>
         </div>
+        <hr><br>
+        <div class="row justify-content-md-center text-center title-icon ">
+            <div class="col-md-6">
+                <a href="personnel.html" class="d-flex flex-column align-items-center">
+                    <object data="dist/img/icon/icon1.svg" type="image/svg+xml" width="99px" height="99px"
+                        style="z-index:-100;"></object>
+                    <div class="tech-top-main-icon-title">บุคลากร
+                    </div>
+                </a>
+                <p>มีบุคลกรทั้งหมดจำนวน 9 คน</p>
+                <p>
+                    <a class="btn btn-primary" href="personnel.html" role="button">ข้อมูลเพิ่มเติม »</a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <a href="ita.html" class="d-flex flex-column align-items-center">
+                    <object data="dist/img/icon/icon4.svg" type="image/svg+xml" width="99px" height="99px"
+                        style="z-index:-100;"></object>
+                    <div class="tech-top-main-icon-title">ITA
+                    </div>
+                </a>
+                <p>ข้อมูลความโปร่งใสและคุณธรรม (ITA) <br>ของฝ่ายเทคโนโลยีทางการศึกษา สำนักวิทยบริการ</p>
+                <p>
+                    <a class="btn btn-primary" href="ita.html" role="button">ข้อมูลเพิ่มเติม »</a>
+                </p>
+            </div>
+        </div>
 
 
     </div>
@@ -237,7 +299,7 @@
             function fetchDataAndCreateCarousel(database, carouselId, linkProperty, titleProperty,
                 imgResourceProperty) {
                 const apiUrl =
-                `http://localhost/edu_tech_backend/component/API/getAPI.php?database=${database}`;
+                    `http://localhost/edu_tech_backend/component/API/getAPI.php?database=${database}`;
 
                 fetch(apiUrl)
                     .then(response => response.json())
@@ -298,8 +360,8 @@
 
             // Call the function for each database
             fetchDataAndCreateCarousel('gallery', 'image-carousel-1', 'img_link', 'img_title', 'img_resource');
-            fetchDataAndCreateCarousel('article', 'article-carousel-1', 'article_link', 'article_title','img_resource');
-            fetchDataAndCreateCarousel('video', 'video-carousel-1', 'video_link', '','img_resource');
+            fetchDataAndCreateCarousel('article', 'article-carousel-1', 'article_link', 'article_title', 'img_resource');
+            fetchDataAndCreateCarousel('video', 'video-carousel-1', 'video_link', '', 'img_resource');
         });
     </script>
 

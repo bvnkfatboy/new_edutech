@@ -314,3 +314,8 @@ margin-top: 10px;
     font-family: kanit;
     font-size: 14px !important;
 }
+
+.highlight {
+    font-weight: bold;
+    color:#06F;
+}

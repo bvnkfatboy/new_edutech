@@ -365,10 +365,77 @@
                     .catch(error => console.error(`Error fetching ${database} data:`, error));
             }
 
+            function fetchDataAndCreateCarousel_Article(database, carouselId, linkProperty, titleProperty,
+                imgResourceProperty, database_id) {
+                const apiUrl =
+                    `http://localhost/edu_tech_backend/component/API/getAPI.php?database=${database}`;
+
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        const owlSlide = document.getElementById(carouselId);
+
+                        data.forEach(item => {
+                            const carouselItem = document.createElement('div');
+                            carouselItem.className = 'item';
+
+                            const link = document.createElement('a');
+                            // เพิ่ม database_id ไปยัง URL ใน href
+                            link.href = `article.html#${item[database_id]}`;
+
+                            const img = document.createElement('img');
+                            img.src = item[imgResourceProperty];
+                            img.alt = item[titleProperty];
+
+                            const text = document.createElement('p');
+                            text.className = 'item-text';
+                            text.textContent = item[titleProperty];
+
+                            link.appendChild(img);
+                            link.appendChild(text);
+                            carouselItem.appendChild(link);
+                            owlSlide.appendChild(carouselItem);
+                        });
+
+                        // Initialize Owl Carousel
+                        $(`#${carouselId}`).owlCarousel({
+                            loop: true,
+                            margin: 10,
+                            nav: true,
+                            navText: [
+                                "<i class='fas fa-chevron-circle-left'></i>",
+                                "<i class='fas fa-chevron-circle-right'></i>"
+                            ],
+                            autoplay: true,
+                            autoplayHoverPause: true,
+                            responsiveClass: true,
+                            responsive: {
+                                0: {
+                                    items: 1
+                                },
+                                500: {
+                                    items: 2
+                                },
+                                600: {
+                                    items: 3
+                                },
+                                1000: {
+                                    items: 4
+                                }
+                            }
+                        });
+                    })
+                    .catch(error => console.error(`Error fetching ${database} data:`, error));
+            }
+
+
+
             // Call the function for each database
             fetchDataAndCreateCarousel('gallery', 'image-carousel-1', 'img_link', 'img_title', 'img_resource');
-            fetchDataAndCreateCarousel('article', 'article-carousel-1', 'article_link', 'article_title', 'img_resource');
+            fetchDataAndCreateCarousel_Article('article', 'article-carousel-1', 'article_link', 'article_title', 'img_resource','article_id');
             fetchDataAndCreateCarousel('video', 'video-carousel-1', 'video_link', '', 'img_resource');
+
+
         });
     </script>
 
